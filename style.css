@@ -6,23 +6,12 @@ body {
     background-color: white;
 }
 
-.icons {
-    list-style-type: none;
-    color: red;
-}
-
 .container {
     display: grid;
     grid-template-columns: 1 fr;
     align-items: stretch;
     justify-items: center;
     height: 100vh;
-}
-
-header{
-    width: 100vw;
-    background-color: rgb(23, 56, 91
-    );
 }
 
 .smallcontainer {
@@ -35,33 +24,20 @@ footer {
     text-align: center;
 }
 
-.wideimage {
-    width: 100vwk;
+.navbarcell {
+        justify-self: stretch;
+        text-align: center;
 }
 
 .navbar {
-    color: white;
-    justify-items: stretch;
-    text-align: center;
-}
-
-a {
-    color: white;
+    width: 100vw;
 }
 
 a:hover {
     background-color: gray;
 }
 
-.expl {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    align-items: start;
-    justify-items: start;
+.logo {
+        justify-self: start;
 }
-
-.logoimg {
-    width: 2em;
-}
-
 

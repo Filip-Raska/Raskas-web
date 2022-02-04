@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 body {
-    width: 90vw;
     font-family: 'Varela Round', sans-serif;
     background-color: white;
+    min-height: 100vh;
 }
 
 .container {
+    background-color: lightblue;
     display: grid;
     grid-template-columns: 1 fr;
     align-items: stretch;
     justify-items: center;
-    height: 100vh;
+    align-self: center;
+    margin: 5em;
 }
 
 .smallcontainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
 }
 
 footer {
@@ -25,19 +26,62 @@ footer {
 }
 
 .navbarcell {
-        justify-self: stretch;
-        text-align: center;
+    text-align: center;
 }
 
 .navbar {
-    width: 100vw;
+    width: 100%;
+    place-items: stretch center;
 }
 
-a:hover {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover, .dropdown:hover {
     background-color: gray;
 }
 
 .logo {
-        justify-self: start;
+    justify-self: center;
+    margin: 10em;
+    border: 5px solid black;
 }
 
+/* style of the button */
+.dropbtn {
+    background-color: inherit;
+    border: none;
+    font: inherit;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+}
+
+.dropdown {
+    display: grid;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-columns: 1fr;
+}

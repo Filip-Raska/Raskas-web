@@ -7,22 +7,21 @@ body {
 }
 
 .container {
-    background-color: lightblue;
     display: grid;
     grid-template-columns: 1 fr;
     align-items: stretch;
     justify-items: center;
-    align-self: center;
-    margin: 5em;
+    margin-top: 3%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
+
+.item {
+    margin-bottom: 5rem; }
 
 .smallcontainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-
-footer {
-    text-align: center;
 }
 
 .navbarcell {
@@ -31,6 +30,8 @@ footer {
 
 .navbar {
     width: 100%;
+    background-color: rgb(12, 21, 49);
+    color: white;
     place-items: stretch center;
 }
 
@@ -38,14 +39,19 @@ a {
     text-decoration: none;
     color: inherit;
 }
-a:hover, .dropdown:hover {
-    background-color: gray;
+
+.navbarcell:hover {
+    background-color: white;
+    color: rgb(12, 21, 49);
 }
 
 .logo {
-    justify-self: center;
-    margin: 10em;
-    border: 5px solid black;
+    justify-self: stretch;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: -4rem;
+    background-color: rgb(12, 21, 49);
+    color: white;
 }
 
 /* style of the button */
@@ -72,9 +78,13 @@ a:hover, .dropdown:hover {
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+    color: white;
   padding: 12px 16px;
   text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: rgb(12, 21, 49);
 }
 
 /* Change color of dropdown links on hover */
@@ -84,4 +94,13 @@ a:hover, .dropdown:hover {
 .dropdown:hover .dropdown-content {
   display: grid;
   grid-template-columns: 1fr;
+  align-items: stretch;
+}
+
+.end {
+    margin: 0;
+    background-color: rgb(12, 21, 49);
+    color: white;
+    justify-self: stretch;
+    text-align: center;
 }
